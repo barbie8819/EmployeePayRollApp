@@ -2,9 +2,13 @@ package com.BridgeLabz.EmployeePayRollApp.model;
 
 import com.BridgeLabz.EmployeePayRollApp.dto.EmployeePayrollDTO;
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "employees")
+@Data
+@NoArgsConstructor
 public class EmployeePayrollData {
 
     @Id
@@ -13,17 +17,8 @@ public class EmployeePayrollData {
     private String name;
     private double salary;
 
-    public EmployeePayrollData() {}
-
     public EmployeePayrollData(EmployeePayrollDTO employeeDTO) {
-        this.name = employeeDTO.name;
-        this.salary = employeeDTO.salary;
+        this.name = employeeDTO.getName();
+        this.salary = employeeDTO.getSalary();
     }
-
-    public int getId() { return id; }
-    public String getName() { return name; }
-    public double getSalary() { return salary; }
-
-    public void setName(String name) { this.name = name; }
-    public void setSalary(double salary) { this.salary = salary; }
 }

@@ -488,3 +488,10 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 2025-02-27T16:23:37.837+05:30  INFO 12300 --- [EmployeePayRollApp] [http-nio-8080-exec-1] c.B.E.service.EmployeePayrollService     : Fetching all employees from database
 2025-02-27T16:23:49.433+05:30  INFO 12300 --- [EmployeePayRollApp] [http-nio-8080-exec-2] c.B.E.c.EmployeePayrollController        : Fetching all employees
 2025-02-27T16:23:49.433+05:30  INFO 12300 --- [EmployeePayRollApp] [http-nio-8080-exec-2] c.B.E.service.EmployeePayrollService     : Fetching all employees from database
+2025-02-27T16:27:54.126+05:30  INFO 12300 --- [EmployeePayRollApp] [http-nio-8080-exec-6] c.B.E.c.EmployeePayrollController        : Fetching employee with ID: 100
+2025-02-27T16:27:54.126+05:30  INFO 12300 --- [EmployeePayRollApp] [http-nio-8080-exec-6] c.B.E.service.EmployeePayrollService     : Fetching employee with ID: 100
+2025-02-27T16:27:54.134+05:30 ERROR 12300 --- [EmployeePayRollApp] [http-nio-8080-exec-6] c.B.E.service.EmployeePayrollService     : Employee with ID 100 not found
+2025-02-27T16:27:54.136+05:30  WARN 12300 --- [EmployeePayRollApp] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Employee with ID 100 not found]
+2025-02-27T16:41:41.067+05:30  INFO 12300 --- [EmployeePayRollApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27T16:41:41.073+05:30  INFO 12300 --- [EmployeePayRollApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-27T16:41:41.087+05:30  INFO 12300 --- [EmployeePayRollApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

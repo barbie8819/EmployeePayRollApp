@@ -30,6 +30,11 @@ public class EmployeePayrollController {
         log.info("Adding new employee: {}", employeeDTO);
         return employeeService.addEmployee(employeeDTO);
     }
+    @GetMapping("/{id}")
+    public EmployeePayrollDTO getEmployeeById(@PathVariable int id) {
+        log.info("Fetching employee with ID: {}", id);
+        return employeeService.getEmployeeById(id);
+    }
 
     @PutMapping("/{id}")
     public EmployeePayrollDTO updateEmployee(@PathVariable int id, @Valid @RequestBody EmployeePayrollDTO employeeDTO) {

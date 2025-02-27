@@ -33,7 +33,7 @@ public class EmployeePayrollService implements IEmployeePayrollService {
                 .map(emp -> new EmployeePayrollDTO(emp.getName(), emp.getSalary()))
                 .orElseThrow(() -> {
                     log.error("Employee with ID {} not found", id);
-                    return new RuntimeException("Employee not found");
+                    return new RuntimeException("Employee with ID " + id + " not found");
                 });
     }
 

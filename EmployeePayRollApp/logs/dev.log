@@ -273,3 +273,8 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 2025-02-27T13:57:56.725+05:30  INFO 3668 --- [EmployeePayRollApp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2025-02-27T13:57:56.751+05:30  INFO 3668 --- [EmployeePayRollApp] [http-nio-8080-exec-1] c.B.E.c.EmployeePayrollController        : Fetching all employees
 2025-02-27T13:57:56.751+05:30  INFO 3668 --- [EmployeePayRollApp] [http-nio-8080-exec-1] c.B.E.service.EmployeePayrollService     : Fetching all employees from database
+2025-02-27T15:12:30.469+05:30  WARN 3668 --- [EmployeePayRollApp] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h12m45s146ms396µs100ns).
+2025-02-27T15:13:53.011+05:30  WARN 3668 --- [EmployeePayRollApp] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s555ms217µs500ns).
+2025-02-27T15:38:03.221+05:30  INFO 3668 --- [EmployeePayRollApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27T15:38:03.258+05:30  INFO 3668 --- [EmployeePayRollApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-27T15:38:03.281+05:30  INFO 3668 --- [EmployeePayRollApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

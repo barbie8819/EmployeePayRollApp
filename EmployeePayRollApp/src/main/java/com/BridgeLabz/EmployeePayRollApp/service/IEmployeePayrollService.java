@@ -1,5 +1,6 @@
 package com.BridgeLabz.EmployeePayRollApp.service;
 
+
 import com.BridgeLabz.EmployeePayRollApp.dto.EmployeePayrollDTO;
 
 import java.util.List;
@@ -9,5 +10,4 @@ public interface IEmployeePayrollService {
     EmployeePayrollDTO getEmployeeById(int id);
     EmployeePayrollDTO addEmployee(EmployeePayrollDTO employeeDTO);
     EmployeePayrollDTO updateEmployee(int id, EmployeePayrollDTO employeeDTO);
-    void deleteEmployee(int id);
 }

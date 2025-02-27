@@ -3,6 +3,7 @@ package com.BridgeLabz.EmployeePayRollApp.service;
 import com.BridgeLabz.EmployeePayRollApp.dto.EmployeePayrollDTO;
 import com.BridgeLabz.EmployeePayRollApp.model.EmployeePayrollData;
 import com.BridgeLabz.EmployeePayRollApp.repository.EmployeePayrollRepository;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@Slf4j // Enables Lombok Logging
+@Slf4j
 public class EmployeePayrollService implements IEmployeePayrollService {
 
     @Autowired
@@ -37,7 +38,7 @@ public class EmployeePayrollService implements IEmployeePayrollService {
     }
 
     @Override
-    public EmployeePayrollDTO addEmployee(EmployeePayrollDTO employeeDTO) {
+    public EmployeePayrollDTO addEmployee(@Valid EmployeePayrollDTO employeeDTO) {
         log.info("Adding new employee: {}", employeeDTO);
         EmployeePayrollData employee = new EmployeePayrollData(employeeDTO);
         EmployeePayrollData savedEmployee = employeeRepository.save(employee);
@@ -46,7 +47,7 @@ public class EmployeePayrollService implements IEmployeePayrollService {
     }
 
     @Override
-    public EmployeePayrollDTO updateEmployee(int id, EmployeePayrollDTO employeeDTO) {
+    public EmployeePayrollDTO updateEmployee(int id, @Valid EmployeePayrollDTO employeeDTO) {
         log.info("Updating employee with ID: {}", id);
         EmployeePayrollData employee = employeeRepository.findById(id)
                 .orElseThrow(() -> {
@@ -56,20 +57,9 @@ public class EmployeePayrollService implements IEmployeePayrollService {
 
         employee.setName(employeeDTO.getName());
         employee.setSalary(employeeDTO.getSalary());
+
         EmployeePayrollData updatedEmployee = employeeRepository.save(employee);
-        log.info("Employee with ID {} updated successfully", id);
-
+        log.info("Employee updated successfully with ID: {}", updatedEmployee.getId());
         return new EmployeePayrollDTO(updatedEmployee.getName(), updatedEmployee.getSalary());
-    }
-
-    @Override
-    public void deleteEmployee(int id) {
-        log.info("Deleting employee with ID: {}", id);
-        if (!employeeRepository.existsById(id)) {
-            log.error("Employee with ID {} not found", id);
-            throw new RuntimeException("Employee not found");
-        }
-        employeeRepository.deleteById(id);
-        log.info("Employee with ID {} deleted successfully", id);
     }
 }

@@ -1,0 +1,35 @@
+2025-02-27T11:38:57.212+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] c.B.E.EmployeePayRollAppApplication      : Starting EmployeePayRollAppApplication using Java 23.0.2 with PID 22324 (C:\Users\scc\Desktop\EmployeePayRollApp\EmployeePayRollApp\target\classes started by scc in C:\Users\scc\Desktop\EmployeePayRollApp\EmployeePayRollApp)
+2025-02-27T11:38:57.215+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] c.B.E.EmployeePayRollAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-02-27T11:38:57.304+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27T11:38:57.306+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27T11:38:58.312+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27T11:38:58.398+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+2025-02-27T11:38:59.283+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-27T11:38:59.307+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-27T11:38:59.307+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27T11:38:59.376+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-27T11:38:59.376+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2069 ms
+2025-02-27T11:38:59.666+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27T11:38:59.770+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-02-27T11:38:59.823+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-27T11:39:00.306+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27T11:39:00.346+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-27T11:39:00.830+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f411d9a
+2025-02-27T11:39:00.833+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-27T11:39:00.885+05:30  WARN 22324 --- [EmployeePayRollApp] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-27T11:39:00.885+05:30  WARN 22324 --- [EmployeePayRollApp] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-27T11:39:01.753+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27T11:39:01.827+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27T11:39:02.163+05:30  WARN 22324 --- [EmployeePayRollApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27T11:39:02.477+05:30  WARN 22324 --- [EmployeePayRollApp] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-27T11:39:02.595+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-27T11:39:02.658+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-27T11:39:02.669+05:30  INFO 22324 --- [EmployeePayRollApp] [restartedMain] c.B.E.EmployeePayRollAppApplication      : Started EmployeePayRollAppApplication in 6.097 seconds (process running for 8.178)
+2025-02-27T11:44:55.123+05:30  INFO 22324 --- [EmployeePayRollApp] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-27T11:44:55.124+05:30  INFO 22324 --- [EmployeePayRollApp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-27T11:44:55.126+05:30  INFO 22324 --- [EmployeePayRollApp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-27T11:44:55.182+05:30  INFO 22324 --- [EmployeePayRollApp] [http-nio-8080-exec-1] c.B.E.c.EmployeePayrollController        : Fetching all employees
+2025-02-27T11:44:55.182+05:30  INFO 22324 --- [EmployeePayRollApp] [http-nio-8080-exec-1] c.B.E.service.EmployeePayrollService     : Fetching all employees from database
+2025-02-27T11:51:51.402+05:30  INFO 22324 --- [EmployeePayRollApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27T11:51:51.410+05:30  INFO 22324 --- [EmployeePayRollApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-27T11:51:51.426+05:30  INFO 22324 --- [EmployeePayRollApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

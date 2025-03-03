@@ -41,4 +41,10 @@ public class EmployeePayrollController {
         log.info("Updating employee with ID: {}", id);
         return employeeService.updateEmployee(id, employeeDTO);
     }
+    @GetMapping("/department/sales")
+    public List<EmployeePayrollDTO> getEmployeesBySalesDepartment() {
+        log.info("Fetching employees belonging to Sales department");
+        return employeeService.getEmployeesBySalesDepartment();
+    }
+
 }

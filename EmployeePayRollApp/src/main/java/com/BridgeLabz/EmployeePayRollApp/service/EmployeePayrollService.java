@@ -67,6 +67,14 @@ public class EmployeePayrollService implements IEmployeePayrollService {
         log.info("Employee updated successfully with ID: {}", updatedEmployee.getId());
         return convertToDTO(updatedEmployee);
     }
+    @Override
+    public List<EmployeePayrollDTO> getEmployeesBySalesDepartment() {
+        log.info("Fetching employees belonging to Sales department");
+        return employeeRepository.findEmployeesBySalesDepartment().stream()
+                .map(emp -> new EmployeePayrollDTO(emp.getName(), emp.getSalary(), emp.getGender(),
+                        emp.getStartDate(), emp.getNote(), emp.getProfilePic(), emp.getDepartment()))
+                .collect(Collectors.toList());
+    }
 
     // 🔹 Helper method to convert Entity to DTO
     private EmployeePayrollDTO convertToDTO(EmployeePayrollData employee) {

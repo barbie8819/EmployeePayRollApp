@@ -10,4 +10,6 @@ public interface IEmployeePayrollService {
     EmployeePayrollDTO getEmployeeById(int id);
     EmployeePayrollDTO addEmployee(EmployeePayrollDTO employeeDTO);
     EmployeePayrollDTO updateEmployee(int id, EmployeePayrollDTO employeeDTO);
+    List<EmployeePayrollDTO> getEmployeesBySalesDepartment();
+
 }

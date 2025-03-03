@@ -1,11 +1,12 @@
 package com.BridgeLabz.EmployeePayRollApp.dto;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class EmployeePayrollDTO {
-    public String name;
-    public double salary;
-
-    public EmployeePayrollDTO(String name, double salary) {
-        this.name = name;
-        this.salary = salary;
-    }
+    private String name;
+    private double salary;
 }
